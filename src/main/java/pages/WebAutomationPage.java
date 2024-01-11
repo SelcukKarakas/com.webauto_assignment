@@ -47,6 +47,8 @@ public class WebAutomationPage extends BasePage {
     private WebElement alertsLink;
     @FindBy(css = ".frame-container .btn-success")
     private WebElement showConfirmLink;
+    @FindBy(css = ".frame-container .btn-warning")
+    private WebElement showPromptLink;
 
     @FindBy(linkText = "Animate")
     private WebElement animateLink;
@@ -123,13 +125,14 @@ public class WebAutomationPage extends BasePage {
         nestedIframeLink.click();
     }
 
-    public void clickOnAlertsLink() {
-        alertsLink.click();
-
-    }
+    public void clickOnAlertsLink() { alertsLink.click(); }
 
     public void clickOnShowConfirmLink() {
         showConfirmLink.click();
+    }
+
+    public void clickOnShowPromptLink() {
+        showPromptLink.click();
     }
 
 }

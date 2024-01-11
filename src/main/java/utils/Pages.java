@@ -3,6 +3,8 @@ package utils;
 import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.alerts.AlertTypes_Page;
+import pages.alerts.ShowConfirm_Page;
+import pages.alerts.ShowPrompt_Page;
 import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovement_Page;
 import pages.draggable.Draggable_DefFunc_Page;
@@ -41,6 +43,8 @@ public class Pages {
     private RevertDraggablePosition_Page revertDraggablePositionPage;
 
     private Selectable_DefFunc_Page selectableDefFuncPage;
+    private ShowConfirm_Page showConfirmPage;
+    private ShowPrompt_Page showPromptPage;
     private SynchronusResize_Page synchronusResizePage;
     private TextArea_Page textAreaPage;
 
@@ -63,6 +67,8 @@ public class Pages {
         revertDraggablePositionPage = new RevertDraggablePosition_Page();
         synchronusResizePage = new SynchronusResize_Page();
         textAreaPage = new TextArea_Page();
+        showConfirmPage = new ShowConfirm_Page();
+        showPromptPage = new ShowPrompt_Page();
     }
 
     public HomePage getHomePage() {
@@ -127,6 +133,14 @@ public class Pages {
 
     public TextArea_Page getTextAreaPage() {
         return textAreaPage;
+    }
+
+    public ShowConfirm_Page getShowConfirmPage() {
+        return showConfirmPage;
+    }
+
+    public ShowPrompt_Page getShowPromptPage() {
+        return showPromptPage;
     }
 
 }

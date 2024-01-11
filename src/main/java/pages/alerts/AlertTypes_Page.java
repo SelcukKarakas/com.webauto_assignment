@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 
-public class AlertTypes_Page extends BasePage {
+public class  AlertTypes_Page extends BasePage {
 
     Alert alert;
 
