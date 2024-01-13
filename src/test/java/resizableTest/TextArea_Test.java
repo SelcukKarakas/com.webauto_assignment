@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class TextArea_Test extends Hooks {
 
     @Test
-    void testTextArea() throws InterruptedException {
+    void testTextArea() {
 
         // Navigate to the WebAutomation page
         pages.getHomePage().clickOnWebAutomationLink();

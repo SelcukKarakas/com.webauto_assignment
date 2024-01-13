@@ -13,11 +13,13 @@ import pages.droppable.Accept_Page;
 import pages.droppable.Droppable_DefFunc_Page;
 import pages.droppable.RevertDraggablePosition_Page;
 import pages.iframe.NestedIframe_Page;
+import pages.iframe.NormalIframe_Page;
 import pages.resizable.Animate_Page;
 import pages.resizable.Resizable_DefFunc_Page;
 import pages.resizable.SynchronusResize_Page;
 import pages.resizable.TextArea_Page;
 import pages.selectable.Selectable_DefFunc_Page;
+import pages.selectable.Serialize_Page;
 
 public class Pages {
 
@@ -38,11 +40,12 @@ public class Pages {
     private Handles_Page handlesPage;
 
     private NestedIframe_Page nestedIframePage;
-
+    private NormalIframe_Page normalIframePage;
     private Resizable_DefFunc_Page resizableDefFuncPage;
     private RevertDraggablePosition_Page revertDraggablePositionPage;
 
     private Selectable_DefFunc_Page selectableDefFuncPage;
+    private Serialize_Page serializePage;
     private ShowConfirm_Page showConfirmPage;
     private ShowPrompt_Page showPromptPage;
     private SynchronusResize_Page synchronusResizePage;
@@ -69,6 +72,8 @@ public class Pages {
         textAreaPage = new TextArea_Page();
         showConfirmPage = new ShowConfirm_Page();
         showPromptPage = new ShowPrompt_Page();
+        normalIframePage = new NormalIframe_Page();
+        serializePage = new Serialize_Page();
     }
 
     public HomePage getHomePage() {
@@ -139,8 +144,11 @@ public class Pages {
         return showConfirmPage;
     }
 
-    public ShowPrompt_Page getShowPromptPage() {
-        return showPromptPage;
+    public ShowPrompt_Page getShowPromptPage() {return showPromptPage;}
+    public NormalIframe_Page getNormalIframePage() {
+        return normalIframePage;
     }
-
+    public Serialize_Page getSerializePage() {
+        return serializePage;
+    }
 }

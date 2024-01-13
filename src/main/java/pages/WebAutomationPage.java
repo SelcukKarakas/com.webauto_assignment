@@ -36,12 +36,16 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Selectable")
     private WebElement selectableLink;
+    @FindBy(linkText = "Serialize")
+    private WebElement serializeLink;
 
     @FindBy(linkText = "Iframe")
     private WebElement iframeLink;
 
     @FindBy(linkText = "Nested Iframe")
     private WebElement nestedIframeLink;
+    @FindBy(linkText = "Normal Iframe")
+    private WebElement normalIframeLink;
 
     @FindBy(linkText = "Alerts")
     private WebElement alertsLink;
@@ -125,7 +129,13 @@ public class WebAutomationPage extends BasePage {
         nestedIframeLink.click();
     }
 
-    public void clickOnAlertsLink() { alertsLink.click(); }
+    public void clickOnNormalIframe() {
+        normalIframeLink.click();
+    }
+
+    public void clickOnAlertsLink() {
+       alertsLink.click();
+    }
 
     public void clickOnShowConfirmLink() {
         showConfirmLink.click();
@@ -135,4 +145,7 @@ public class WebAutomationPage extends BasePage {
         showPromptLink.click();
     }
 
+    public void clickOnSerializeLink() {
+        serializeLink.click();
+    }
 }
