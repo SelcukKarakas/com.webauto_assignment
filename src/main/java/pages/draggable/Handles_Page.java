@@ -25,35 +25,31 @@ public class Handles_Page extends BasePage {
 
     public void dragByBigHandle(int xOffset, int yOffset) {
         actions.moveToElement(bigHandle).dragAndDropBy(bigHandle, xOffset, yOffset).build().perform();
-
     }
-    public int[] getLocationOfBoxWithBigHandle(){
+
+    public int[] getLocationOfBoxWithBigHandle() {
         int[] coordinates = new int[2];
-        coordinates[0]= boxWithBigHandle.getLocation().getX();
-        coordinates[1]= boxWithBigHandle.getLocation().getY();
+        coordinates[0] = boxWithBigHandle.getLocation().getX();
+        coordinates[1] = boxWithBigHandle.getLocation().getY();
         return coordinates;
     }
 
     public void dragBoxWithBigHandleWithoutUsingHandle(int xOffset, int yOffset) {
-        actions.moveToElement(boxWithBigHandle, 0, 33).dragAndDropBy(boxWithSmallHandle,xOffset,yOffset).build().perform();
-
+        actions.moveToElement(boxWithBigHandle, 0, 33).dragAndDropBy(boxWithSmallHandle, xOffset, yOffset).build().perform();
     }
+
     public void dragBySmallHandle(int xOffset, int yOffset) {
         actions.moveToElement(smallHandle).dragAndDropBy(smallHandle, xOffset, yOffset).build().perform();
-
     }
-    public int[] getLocationOfBoxWithSmallHandle(){
+
+    public int[] getLocationOfBoxWithSmallHandle() {
         int[] coordinates = new int[2];
-        coordinates[0]= boxWithSmallHandle.getLocation().getX();
-        coordinates[1]= boxWithSmallHandle.getLocation().getY();
+        coordinates[0] = boxWithSmallHandle.getLocation().getX();
+        coordinates[1] = boxWithSmallHandle.getLocation().getY();
         return coordinates;
     }
+
     public void dragBoxWithSmallHandleWithoutUsingHandle(int xOffset, int yOffset) {
-        actions.moveToElement(dragMeAround).dragAndDropBy(dragMeAround,xOffset,yOffset).build().perform();
-
-
+        actions.moveToElement(dragMeAround).dragAndDropBy(dragMeAround, xOffset, yOffset).build().perform();
     }
-
-
-
 }
