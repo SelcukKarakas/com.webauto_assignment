@@ -9,6 +9,7 @@ import java.util.List;
 public class AccentFolding_Page extends BasePage {
     @FindBy(id = "developer-accentFolding")
     private WebElement inputField;
+
     @FindBy(css = "#ui-id-40 .ui-menu-item")
     private List<WebElement> suggestionList;
 

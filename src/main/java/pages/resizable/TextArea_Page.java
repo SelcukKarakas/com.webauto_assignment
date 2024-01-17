@@ -6,12 +6,16 @@ import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 
 public class TextArea_Page extends BasePage {
+
     @FindBy(id = "resizable-text-area-res")
     private WebElement textAreaInputField;
+
     @FindBy(css = ".ui-wrapper > .ui-resizable-e")
     private WebElement rightHandleOfTheTextArea;
+
     @FindBy(css = ".ui-wrapper > .ui-resizable-s")
     private WebElement bottomHandleOfTheTextArea;
+
     @FindBy(css = ".ui-wrapper > .ui-resizable-se")
     private WebElement edgeHandleOfTheTextArea;
 
@@ -27,23 +31,19 @@ public class TextArea_Page extends BasePage {
                 "Nevertheless, Heidi is left with him, and the odd couple—after some initial reluctance on the grandfather’s part—are happy together. " +
                 "Away from her aunt’s oppression, the little girl’s spirits soar, and her goodness and faith soften the old man’s heart. " +
                 "She quickly comes to love life on the mountain and makes friends with Peter the goatherd and his blind grandmother, among others.";
-
         textAreaInputField.clear();
         textAreaInputField.sendKeys(text);
     }
 
     public void enlargeTheTextAreaForSpecificDimension(int xOffset, int yOffset) {
         actions.clickAndHold(edgeHandleOfTheTextArea).moveByOffset(xOffset, yOffset).release().build().perform();
-
     }
 
     public void shrinkTheTextAreaForSpecificDimension(int xOffset, int yOffset) {
         actions.clickAndHold(edgeHandleOfTheTextArea).moveByOffset(xOffset, yOffset).release().build().perform();
-
     }
 
     public void scrollDownOnText() {
-
         actions.moveToElement(textAreaInputField).click().build().perform();
         for (int i = 0; i < 6; i++) {
             actions.sendKeys(Keys.PAGE_DOWN).perform();
@@ -51,7 +51,6 @@ public class TextArea_Page extends BasePage {
     }
 
     public void scrollUpOnText() {
-
         actions.moveToElement(textAreaInputField).click().build().perform();
         for (int i = 0; i < 6; i++) {
             actions.sendKeys(Keys.PAGE_UP).perform();

@@ -13,18 +13,25 @@ import java.util.List;
 public class DisplayMultipleMonths_Page extends BasePage {
     @FindBy(id = "datepicker-multiple-months")
     private WebElement dateDisplayField;
+
     @FindBy(xpath = "(//p[@class='text-fifth'])[4]")
     private WebElement dateDisplayFieldGeneral;
+
     @FindBy(xpath = "//button[text()='Today']")
     private WebElement todayButton;
+
     @FindBy(xpath = "//button[text()='Done']")
     private WebElement doneButton;
+
     @FindBy(xpath = "//span[text()='Prev']")
     private WebElement prevButton;
+
     @FindBy(xpath = "//span[text()='Next']")
     private WebElement nextButton;
+
     @FindBy(xpath = "//div[@class='ui-datepicker-title']")
     private List<WebElement> listOfThreeDateTitle;
+
     @FindBy(xpath = "//table/tbody/tr/td/a[@data-date='14']")
     private List<WebElement> listOfSelectedDayForEachMonth;
 

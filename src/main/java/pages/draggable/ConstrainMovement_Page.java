@@ -8,14 +8,19 @@ public class ConstrainMovement_Page extends BasePage {
 
     @FindBy(id = "draggable5")
     private WebElement verticallyMovedBox;
+
     @FindBy(id = "draggable6")
     private WebElement horizontallyMovedBox;
+
     @FindBy(id = "draggable7")
     private WebElement boxWithinBigBox;
+
     @FindBy(id = "draggable8")
     private WebElement boxWithinSmallBox;
+
     @FindBy(id = "containment-wrapper")
     private WebElement bigBox;
+
     @FindBy(css = "#containment-wrapper > div:nth-child(2)")
     private WebElement smallBox;
 

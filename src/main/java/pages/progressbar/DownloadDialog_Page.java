@@ -8,12 +8,16 @@ import utils.BrowserUtils;
 public class DownloadDialog_Page extends BasePage {
     @FindBy(id = "downloadButton-download-dialog")
     private WebElement downloadButton;
+
     @FindBy(id = "ui-id-82")
     private WebElement fileDownloadButton;
+
     @FindBy(css = ".ui-dialog-titlebar .ui-button")
     private WebElement fileDownloadCloseButton;
+
     @FindBy(css = "#progressbar-download-dialog .ui-progressbar-value")
     private WebElement currentProgressBar;
+
     @FindBy(xpath = "//button[contains(text(),'Cancel Download')]")
     private WebElement cancelDownloadButton;
 

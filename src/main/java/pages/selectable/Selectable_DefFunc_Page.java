@@ -4,10 +4,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
-
 import java.util.List;
 
 public class Selectable_DefFunc_Page extends BasePage {
+
     @FindBy(css = "#selectable-def-functionality > li")
     private List<WebElement> itemList;
 

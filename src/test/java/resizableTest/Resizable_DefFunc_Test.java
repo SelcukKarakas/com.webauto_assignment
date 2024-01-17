@@ -15,6 +15,7 @@ public class Resizable_DefFunc_Test extends Hooks {
 
     @Test
     void testDefaultResizableFunc(){
+
         //1.Open the browser and navigate to the page
         pages.getHomePage().clickOnWebAutomationLink();
 
@@ -43,10 +44,8 @@ public class Resizable_DefFunc_Test extends Hooks {
         System.out.println("finalWidth" + finalWidth);
         System.out.println("finalHeight" + finalHeight);
 
-
         //5.Verify that the resizable element has been resized
         Assertions.assertThat(finalWidth).isGreaterThan(initialWidth);
         Assertions.assertThat(finalHeight).isGreaterThan(initialHeight);
-
     }
 }

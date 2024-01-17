@@ -7,10 +7,13 @@ import pages.BasePage;
 public class Accept_Page extends BasePage {
     @FindBy(id = "draggable-nonvalid-accept")
     private WebElement unDroppableBox;
+
     @FindBy(id = "draggable-accept")
     private WebElement droppableBox;
+
     @FindBy(id = "droppable-accept")
     private WebElement acceptingBox;
+
     @FindBy(css = "#droppable-accept>p")
     private WebElement statusOfAcceptingBox;
 

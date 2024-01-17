@@ -19,6 +19,7 @@ public class Draggable_AutoScrolling_Test extends Hooks {
 
     @Test
     void testAutoScrolling() {
+
         //1. Open the browser and navigate to the page
         pages.getHomePage().clickOnWebAutomationLink();
 
@@ -34,7 +35,6 @@ public class Draggable_AutoScrolling_Test extends Hooks {
         //5. Drag the third draggable element by -215 pixels to the left
         pages.getAutoScrollingPage().dragThirdDraggableByXOffset(-215);
 
-
         //6. Verify that the elements are ordered as "Three", "Two", "One"
         int finalX1 = pages.getAutoScrollingPage().getLocationOfFirstDraggableX();
         int finalX2 = pages.getAutoScrollingPage().getLocationOfSecondDraggableX();
@@ -42,6 +42,5 @@ public class Draggable_AutoScrolling_Test extends Hooks {
 
         Assertions.assertThat(finalX3).isLessThan(finalX2);
         Assertions.assertThat(finalX2).isLessThan(finalX1);
-
     }
 }

@@ -7,10 +7,13 @@ import pages.BasePage;
 public class RevertDraggablePosition_Page extends BasePage {
     @FindBy(id = "draggable-revert-draggable")
     private WebElement revertWhenDropped;
+
     @FindBy(id = "draggable2-revert-draggable")
     private WebElement revertWhenNotDropped;
+
     @FindBy(id = "droppable-revert-draggable")
     private WebElement acceptingBox;
+
     @FindBy(css = "#droppable-revert-draggable>p")
     private WebElement statusOfAcceptingBox;
 

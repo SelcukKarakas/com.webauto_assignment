@@ -18,6 +18,7 @@ public class Animate_Test extends Hooks {
 
     @Test
     void testAnimate(){
+
         //1. Open the browser and navigate to the page
         pages.getHomePage().clickOnWebAutomationLink();
 
@@ -44,8 +45,6 @@ public class Animate_Test extends Hooks {
         System.out.println(" W1  -> " + width1);
         System.out.println(" H1 -> " + height1);
 
-
-
         //wait 1 second
         BrowserUtils.wait(1);
 
@@ -56,7 +55,6 @@ public class Animate_Test extends Hooks {
         System.out.println(" W2  -> " + width2);
         System.out.println(" H2 -> " + height2);
 
-
         //Verify that size1 is greater than initial size
         Assertions.assertThat(width1).isGreaterThan(initialWidth);
         Assertions.assertThat(height1).isGreaterThan(initialHeight);
@@ -64,6 +62,5 @@ public class Animate_Test extends Hooks {
         //Verify that size2 is greater than size1
         Assertions.assertThat(width2).isGreaterThan(width1);
         Assertions.assertThat(height2).isGreaterThan(height1);
-
     }
 }

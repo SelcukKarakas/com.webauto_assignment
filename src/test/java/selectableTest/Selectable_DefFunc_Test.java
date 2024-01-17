@@ -23,6 +23,7 @@ public class Selectable_DefFunc_Test extends Hooks {
 
     @Test
     void testSelectableDefFunc(){
+
         //1. Open the browser and navigate to the URL
         //2. Click on webautomation link
         pages.getHomePage().clickOnWebAutomationLink();
@@ -64,6 +65,5 @@ public class Selectable_DefFunc_Test extends Hooks {
         Assertions.assertTrue(pages.getSelectableDefFuncPage().isTheItemSelectedByIndex(1), "Not able to selected");
         Assertions.assertTrue(pages.getSelectableDefFuncPage().isTheItemSelectedByIndex(2), "Not able to selected");
         Assertions.assertTrue(pages.getSelectableDefFuncPage().isTheItemSelectedByIndex(3), "Not able to selected");
-
     }
 }
