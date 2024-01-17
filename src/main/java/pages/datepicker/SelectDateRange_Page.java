@@ -4,16 +4,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import pages.BasePage;
-
 import java.util.List;
 
 public class SelectDateRange_Page extends BasePage {
     @FindBy(id = "from-selectDateRange")
     private WebElement fromInputField;
+
     @FindBy(id = "to-selectDateRange")
     private WebElement toInputField;
+
     @FindBy(xpath = "//div[@class='ui-datepicker-title']/child::select")
     private WebElement dropDownOfMonths;
+
     @FindBy(css = ".ui-datepicker-header .ui-datepicker-title")
     private List<WebElement> threeTitlesOfSelectedMonths;
 

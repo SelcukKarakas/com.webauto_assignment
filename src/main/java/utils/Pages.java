@@ -29,32 +29,59 @@ import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.Serialize_Page;
 
 public class Pages {
+
     private AccentFolding_Page accentFoldingPage;
+
     private AlertTypes_Page alertTypesPage;
+
     private Animate_Page animatePage;
+
     private AutoScrolling_Page autoScrollingPage;
+
     private Accept_Page acceptPage;
+
     private ConstrainMovement_Page constrainMovementPage;
+
     private DisplayMultipleMonths_Page displayMultipleMonthsPage;
+
     private DownloadDialog_Page downloadDialogPage;
+
     private Draggable_DefFunc_Page draggableDefFuncPage;
+
     private Droppable_DefFunc_Page droppableDefFuncPage;
+
     private HomePage homePage;
+
     private Handles_Page handlesPage;
+
     private Icons_Page iconsPage;
+
     private ModalForm_Page modalFormPage;
+
     private NestedIframe_Page nestedIframePage;
+
     private NormalIframe_Page normalIframePage;
+
     private Resizable_DefFunc_Page resizableDefFuncPage;
+
     private RevertDraggablePosition_Page revertDraggablePositionPage;
+
     private Selectable_DefFunc_Page selectableDefFuncPage;
+
     private SelectDateRange_Page selectDateRangePage;
+
     private Serialize_Page serializePage;
+
     private ShowConfirm_Page showConfirmPage;
+
     private ShowPrompt_Page showPromptPage;
+
     private SynchronusResize_Page synchronusResizePage;
+
     private TextArea_Page textAreaPage;
+
     private Toolbar_Page toolbarPage;
+
     private WebAutomationPage webAutomationPage;
 
     public Pages() {
@@ -194,5 +221,4 @@ public class Pages {
     public ModalForm_Page getModalFormPage() {
         return modalFormPage;
     }
-
 }

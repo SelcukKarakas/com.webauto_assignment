@@ -11,18 +11,25 @@ public class ModalForm_Page extends BasePage {
 
     @FindBy(xpath = "//table[@class='ui-widget ui-widget-content mb-4']/tbody/tr/child::td")
     private List<WebElement> usersData;
+
     @FindBy(xpath = "(//button/span[@class='ui-button-icon ui-icon ui-icon-closethick'])[3]")
     private WebElement basicDialogCloseButton;
+
     @FindBy(xpath = "//button[text()='Create Account']")
     private WebElement createAccountButton;
+
     @FindBy(id = "name")
     private WebElement nameInputField;
+
     @FindBy(id = "surname")
     private WebElement surnameInputField;
+
     @FindBy(id = "email")
     private WebElement emailInputField;
+
     @FindBy(xpath = "//button[text()='Submit']")
     private WebElement submitButton;
+
     private List<String> userData = new ArrayList<>();
 
     public ModalForm_Page() {

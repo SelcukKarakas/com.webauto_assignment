@@ -3,7 +3,6 @@ package pages.iframe;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
-import utils.BrowserUtils;
 
 public class NestedIframe_Page extends BasePage {
 
@@ -13,18 +12,16 @@ public class NestedIframe_Page extends BasePage {
     @FindBy(xpath = "(//iframe)[4]")
     private WebElement iFrameElement;
 
-    public void switchToIFrame(){
+    public void switchToIFrame() {
         DRIVER.switchTo().frame(iFrameElement);
     }
 
-    public String getHeaderInFrame(){
+    public String getHeaderInFrame() {
         switchToIFrame();
         return headerInFrame.getText();
     }
 
-    public void printTitle(){
+    public void printTitle() {
         System.out.println(DRIVER.switchTo().frame(iFrameElement).getTitle());
     }
-
-
 }

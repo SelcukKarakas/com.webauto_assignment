@@ -4,12 +4,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
-
 import java.util.List;
 
 public class Serialize_Page extends BasePage {
+
     @FindBy(id = "select-result")
     private WebElement selectedResult;
+
     @FindBy(css = "#selectable-serialize > li")
     private List<WebElement> itemList;
 

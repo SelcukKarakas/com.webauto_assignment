@@ -6,10 +6,12 @@ import org.junit.jupiter.api.Test;
 import utils.Pages;
 
 public class Draggable_Def_Functionality_Test extends Hooks {
+
     Pages pages = new Pages();
 
     @Test
     public void testDefaultDraggable() {
+
         pages.getHomePage().clickOnWebAutomationLink();
 
         // 2. click on the draggable button

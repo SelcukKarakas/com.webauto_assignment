@@ -7,8 +7,10 @@ import pages.BasePage;
 public class NormalIframe_Page extends BasePage {
     @FindBy(id = "nestedIframe")
     private WebElement nestedIframe;
+
     @FindBy(tagName = "h1")
     private WebElement headerOfNestedIframe;
+
     @FindBy(xpath = "//div/p/a[contains(text(),'More information...')]")
     private WebElement moreInformationLink;
 

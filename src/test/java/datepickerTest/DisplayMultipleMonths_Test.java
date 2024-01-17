@@ -2,7 +2,6 @@ package datepickerTest;
 
 import BaseTest.Hooks;
 import org.junit.jupiter.api.Test;
-import utils.BrowserUtils;
 
 public class DisplayMultipleMonths_Test extends Hooks {
 

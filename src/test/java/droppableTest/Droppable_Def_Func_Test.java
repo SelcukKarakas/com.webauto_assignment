@@ -16,6 +16,7 @@ public class Droppable_Def_Func_Test extends Hooks {
 
     @Test
     void testDefaultDroppable() {
+
         //1. Open the browser and navigate to the page
         pages.getHomePage().clickOnWebAutomationLink();
 

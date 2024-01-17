@@ -6,6 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 public class BrowserUtils {
 
     private static Actions actions = new Actions(Driver.getDriver());
+
     public static void scrollDownWithPageDown(){
         actions.keyDown(Keys.PAGE_DOWN).release().build().perform();
         wait(1);
@@ -35,7 +36,4 @@ public class BrowserUtils {
     public static String getTitle(){
         return Driver.getDriver().getTitle();
     }
-
-
-
 }

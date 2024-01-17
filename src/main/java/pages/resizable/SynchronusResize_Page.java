@@ -4,22 +4,29 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 
-
 public class SynchronusResize_Page extends BasePage {
+
     @FindBy(css = "#resizable-synchr-resize > .ui-resizable-e")
     private WebElement rightSideOfPuppeteer;
+
     @FindBy(css = "#resizable-synchr-resize > .ui-resizable-s")
     private WebElement bottomOfPuppeteer;
+
     @FindBy(css = "#resizable-synchr-resize > .ui-resizable-se")
     private WebElement cornerOfPuppeteer;
+
     @FindBy(css = "#resizable-synchr-resize")
     private WebElement puppeteer;
+
     @FindBy(css = "#also-synchr-resize > .ui-resizable-e")
     private WebElement rightSideOfPuppet;
+
     @FindBy(css = "#also-synchr-resize > .ui-resizable-s")
     private WebElement bottomOfPuppet;
+
     @FindBy(css = "#also-synchr-resize > .ui-resizable-se")
     private WebElement cornerOfPuppet;
+
     @FindBy(css = "#also-synchr-resize")
     private WebElement puppet;
 

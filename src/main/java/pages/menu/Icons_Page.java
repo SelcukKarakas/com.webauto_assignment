@@ -4,18 +4,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.BasePage;
 import utils.BrowserUtils;
-
 import java.util.List;
 
 public class Icons_Page extends BasePage {
     @FindBy(css = "#menu-w-icons > li")
     private List<WebElement> menuOfIcons;
+
     @FindBy(id = "ui-id-77")
     private WebElement prevIcon;
+
     @FindBy(id = "ui-id-78")
     private WebElement stopIcon;
+
     @FindBy(id = "ui-id-79")
     private WebElement playIcon;
+
     @FindBy(id = "ui-id-80")
     private WebElement nextIcon;
 

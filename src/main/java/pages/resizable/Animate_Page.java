@@ -23,7 +23,4 @@ public class Animate_Page extends BasePage {
     public int getHeightReleasePerformed(){
         return resizableElement.getSize().getHeight();
     }
-
-
-
 }

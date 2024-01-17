@@ -12,18 +12,25 @@ import static java.lang.Integer.parseInt;
 public class Toolbar_Page extends BasePage {
     @FindBy(xpath = "//select[@title='Color']")
     private WebElement colorOptionsDropDown;
+
     @FindBy(xpath = "//select[@title='Background color']")
     private WebElement highLightOptionsDropDown;
+
     @FindBy(xpath = "(//select[@class='form-select me-2 bg-primary text-fifth fs-4'])[1]")
     private WebElement zoomOptionsDropDown;
+
     @FindBy(xpath = "//button[text()='B']")
     private WebElement bOption;
+
     @FindBy(xpath = "//button[text()='I']")
     private WebElement iOption;
+
     @FindBy(xpath = "//button[text()='U']")
     private WebElement uOption;
+
     @FindBy(xpath = "//button[text()='Print']")
     private WebElement printOption;
+
     @FindBy(id = "page") // //div/h1[text()='Yazdır']
     private WebElement textArea;
 
